@@ -34,26 +34,94 @@ body{
 }
 .topbar i{margin-right:.4rem;color:#A9B4FF}
 
-.nav{
-  display:flex;align-items:center;justify-content:space-between;padding:1rem 0;color:#fff
+.nav {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:1rem 0;
+  width:100%;
 }
-.brand .logo{font-weight:800;font-size:1.25rem;letter-spacing:0.5px}
-.menu{list-style:none;display:flex;gap:24px;align-items:center;margin:0;padding:0}
-.menu a{color:#fff;text-decoration:none;font-weight:600;opacity:.95}
-.menu a:hover{opacity:1}
 
-.burger{display:inline-block;width:30px;cursor:pointer}
-.burger span,.burger span:before,.burger span:after{
-  display:block;background:#fff;height:2px;border-radius:2px;position:relative;transition:.3s
+.brand {
+  display:flex;
+  align-items:center;
+  margin-right:auto;
 }
-.burger span:before,.burger span:after{content:"";position:absolute;left:0;width:100%}
-.burger span:before{top:-8px}.burger span:after{top:8px}
-#nav-toggle{display:none}
-@media (max-width:880px){
-  .menu{position:absolute;inset:70px 0 auto 0;background:rgba(10,13,46,.96);
-        flex-direction:column;padding:18px 0;transform:translateY(-130%);transition:.35s}
-  #nav-toggle:checked ~ .menu{transform:translateY(0)}
-  .burger{z-index:10}
+
+.menu {
+  list-style:none;
+  display:flex;
+  gap:24px;
+  align-items:center;
+  margin-left:auto;
+}
+
+.menu a {
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  opacity:.95;
+}
+
+.menu a:hover {
+  opacity:1;
+}
+
+/* BURGER */
+#nav-toggle { display:none; }
+
+.burger {
+  display:none;
+  cursor:pointer;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+  content:"";
+  display:block;
+  height:3px;
+  width:26px;
+  background:#fff;
+  position:relative;
+  transition:.3s;
+}
+
+.burger span::before {
+  top:-8px;
+  position:absolute;
+}
+
+.burger span::after {
+  top:8px;
+  position:absolute;
+}
+
+/* Mobile Menu */
+@media (max-width:900px) {
+
+  .burger { display:block; }
+
+  .menu {
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    background:var(--navy);
+    flex-direction:column;
+    gap:18px;
+    padding:24px 0;
+    transform:translateY(-150%);
+    opacity:0;
+    pointer-events:none;
+    transition:.35s ease;
+  }
+
+  #nav-toggle:checked ~ .menu {
+    transform:translateY(0);
+    opacity:1;
+    pointer-events:auto;
+  }
 }
 
 .hero{
@@ -180,4 +248,5 @@ body{
 @media (min-width:860px){
   .slide{min-width:520px}
 }
+
 
