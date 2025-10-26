@@ -1,69 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Agency - We Boost Your Growth</title>
-    <link rel="stylesheet" href="style.css">
+  <!-- SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgencyPro — Digital Growth for Modern Brands</title>
+  <meta name="description" content="We design high-converting websites and growth systems for modern brands. Strategy, UX, development, performance." />
+  <link rel="canonical" href="https://yourname.github.io/landing-demo-1/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AgencyPro — Digital Growth for Modern Brands" />
+  <meta property="og:description" content="Web strategy, UX, development and performance to scale your business." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1529336953121-02d816d5a8f3?q=80&w=1200&auto=format&fit=crop" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"AgencyPro",
+    "url":"https://yourname.github.io/landing-demo-1/",
+    "sameAs": ["https://www.linkedin.com/","https://x.com/"],
+    "logo":"https://images.unsplash.com/photo-1529336953121-02d816d5a8f3?q=80&w=400&auto=format&fit=crop"
+  }
+  </script>
 </head>
 <body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container">
+      <span><i class="fa-solid fa-shield-check"></i> 14-day satisfaction policy</span>
+      <span><i class="fa-solid fa-clock"></i> Avg. delivery: 3–5 days</span>
+      <span class="hide-sm"><i class="fa-solid fa-bolt"></i> Express option available</span>
+    </div>
+  </div>
 
-<header class="hero">
-    <nav>
-        <h1 class="logo">AgencyPro</h1>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact" class="btn-nav">Contact</a></li>
-        </ul>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <nav class="nav container">
+      <div class="brand">
+        <span class="logo">AgencyPro</span>
+      </div>
+      <input id="nav-toggle" type="checkbox" />
+      <label for="nav-toggle" class="burger"><span></span></label>
+      <ul class="menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#contact" class="btn btn--sm btn--primary">Book a Call</a></li>
+      </ul>
     </nav>
 
-    <div class="hero-content">
-        <h2>We Help Your Business Grow</h2>
-        <p>Professional digital solutions to scale your brand and reach more customers.</p>
-        <a href="#contact" class="cta-btn">Get a Free Consultation</a>
+    <div class="hero__content container reveal">
+      <h1>Digital Growth for Modern Brands</h1>
+      <p class="lead">
+        We design <strong>high-converting experiences</strong> that turn traffic into revenue:
+        strategy, UX, development and performance in one agile team.
+      </p>
+      <div class="cta-group">
+        <a href="#contact" class="btn btn--primary btn--lg"><i class="fa-solid fa-calendar-check"></i> Free Strategy Call</a>
+        <a href="#work" class="btn btn--ghost btn--lg"><i class="fa-solid fa-eye"></i> See Our Work</a>
+      </div>
+      <div class="hero__badges">
+        <img src="https://dummyimage.com/120x36/0a0d2e/ffffff.png&text=Trusted+by" alt="Trusted by">
+        <img src="https://dummyimage.com/90x36/f5f7fa/1a1f4a.png&text=TechCo" alt="TechCo">
+        <img src="https://dummyimage.com/90x36/f5f7fa/1a1f4a.png&text=Retail+" alt="Retail+">
+        <img src="https://dummyimage.com/90x36/f5f7fa/1a1f4a.png&text=Finance" alt="Finance">
+      </div>
     </div>
-</header>
+    <div class="hero__bg" role="img" aria-label="Agency team working on strategy"></div>
+  </header>
 
-<section id="services" class="services">
-    <h3>Our Services</h3>
-    <div class="service-box">
-        <h4>Website Development</h4>
-        <p>Modern and optimized websites tailored to your goals.</p>
+  <!-- Services -->
+  <section id="services" class="section container">
+    <div class="section__head reveal">
+      <h2>Services that Move the Needle</h2>
+      <p>From strategy to launch. Measurable outcomes, not vanity metrics.</p>
     </div>
-    <div class="service-box">
-        <h4>Brand Strategy</h4>
-        <p>We build strong visual identities for your business success.</p>
+    <div class="grid grid--3">
+      <div class="card reveal">
+        <div class="icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3>Conversion Websites</h3>
+        <p>UX-first websites and landing systems designed to convert. Clean code, blazing speed, scalable architecture.</p>
+        <ul class="list">
+          <li><i class="fa-solid fa-check"></i> Research & wireframing</li>
+          <li><i class="fa-solid fa-check"></i> Design system & components</li>
+          <li><i class="fa-solid fa-check"></i> SEO & performance</li>
+        </ul>
+        <a href="#contact" class="link-cta">Get a tailored plan →</a>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Funnel & CRO</h3>
+        <p>Hypothesis, A/B tests, analytics and persuasive copy to systematically lift your CR.</p>
+        <ul class="list">
+          <li><i class="fa-solid fa-check"></i> Messaging & offer fit</li>
+          <li><i class="fa-solid fa-check"></i> A/B testing roadmap</li>
+          <li><i class="fa-solid fa-check"></i> Heatmaps & insights</li>
+        </ul>
+        <a href="#contact" class="link-cta">Request an audit →</a>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><i class="fa-solid fa-rocket"></i></div>
+        <h3>Performance Launch</h3>
+        <p>Launch pages ready for paid traffic with tracking, pixels, events and fast iterations.</p>
+        <ul class="list">
+          <li><i class="fa-solid fa-check"></i> Pixel & events setup</li>
+          <li><i class="fa-solid fa-check"></i> Speed < 1.5s LCP</li>
+          <li><i class="fa-solid fa-check"></i> QA & monitoring</li>
+        </ul>
+        <a href="#contact" class="link-cta">See pricing →</a>
+      </div>
     </div>
-    <div class="service-box">
-        <h4>Performance Marketing</h4>
-        <p>Reach new audiences and grow conversions with precision.</p>
-    </div>
-</section>
+  </section>
 
-<section id="about" class="about">
-    <img src="https://picsum.photos/500/400?random=1" alt="Team">
-    <div class="about-text">
-        <h3>Who We Are</h3>
-        <p>We are a passionate team that turns ideas into real results, with a focus on quality and measurable growth.</p>
-        <p>Let’s innovate and scale your business together.</p>
+  <!-- Why Us / Value Props -->
+  <section class="section section--alt">
+    <div class="container grid grid--2">
+      <div class="reveal">
+        <h2>Why Brands Choose <span class="accent">AgencyPro</span></h2>
+        <div class="pill-list">
+          <span><i class="fa-solid fa-gauge-high"></i> Performance-first</span>
+          <span><i class="fa-solid fa-layer-group"></i> Design systems</span>
+          <span><i class="fa-solid fa-pen-ruler"></i> Sharp copy</span>
+          <span><i class="fa-solid fa-chart-line"></i> Analytics-driven</span>
+        </div>
+        <p class="mt">
+          We blend strategy, UX and engineering to deliver <strong>predictable growth</strong>. Every component is reusable,
+          accessible and built for speed—because seconds cost money.
+        </p>
+        <div class="cta-inline">
+          <a href="#contact" class="btn btn--primary"><i class="fa-solid fa-phone"></i> Talk to an expert</a>
+          <a href="#results" class="btn btn--ghost"><i class="fa-solid fa-arrow-down"></i> See results</a>
+        </div>
+      </div>
+      <div class="media reveal">
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200&auto=format&fit=crop" alt="Dashboard results" loading="lazy">
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="contact" class="contact">
-    <h3>Contact Us</h3>
-    <form action="#">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Request</button>
+  <!-- Numbers / Results -->
+  <section id="results" class="section container">
+    <div class="section__head reveal">
+      <h2>Numbers That Matter</h2>
+      <p>Outcome-focused work across SaaS, e-commerce and services.</p>
+    </div>
+    <div class="stats grid grid--4">
+      <div class="stat reveal"><span class="kpi">+62%</span><small>Lead conversion</small></div>
+      <div class="stat reveal"><span class="kpi">-37%</span><small>CAC reduction</small></div>
+      <div class="stat reveal"><span class="kpi">1.2s</span><small>LCP on mobile</small></div>
+      <div class="stat reveal"><span class="kpi">98/100</span><small>Lighthouse score</small></div>
+    </div>
+    <div class="note reveal"><i class="fa-solid fa-info-circle"></i> Realistic targets; exact impact varies by baseline and traffic quality.</div>
+  </section>
+
+  <!-- Work / Portfolio -->
+  <section id="work" class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Selected Work</h2>
+        <p>Clean builds, modular sections, measurable uplift.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="project reveal">
+          <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop" alt="SaaS website" loading="lazy">
+          <h3>SaaS Growth Site</h3>
+          <p>Component library + CRO experiments. +38% sign-ups.</p>
+          <a class="link-cta" href="#" aria-disabled="true">Live demo (placeholder)</a>
+        </article>
+        <article class="project reveal">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="E-commerce LP" loading="lazy">
+          <h3>E-commerce Launch LP</h3>
+          <p>Fast PDP + landing stack for paid traffic. +24% CR.</p>
+          <a class="link-cta" href="#" aria-disabled="true">Live demo (placeholder)</a>
+        </article>
+        <article class="project reveal">
+          <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop" alt="Fintech microsite" loading="lazy">
+          <h3>Fintech Microsite</h3>
+          <p>Trust messaging + score 98/100. 1.3s LCP.</p>
+          <a class="link-cta" href="#" aria-disabled="true">Live demo (placeholder)</a>
+        </article>
+      </div>
+      <div class="cta-center reveal">
+        <a href="#contact" class="btn btn--primary btn--lg">Get a proposal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (Slider) -->
+  <section class="section container">
+    <div class="section__head reveal">
+      <h2>What Clients Say</h2>
+      <p>Proof beats promises.</p>
+    </div>
+
+    <div class="slider reveal" aria-roledescription="carousel">
+      <button class="slider__btn prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="slider__track">
+        <figure class="slide">
+          <blockquote>“They rebuilt our funnel and cut our CPA by 34% in two weeks.”</blockquote>
+          <figcaption><img src="https://i.pravatar.cc/60?img=5" alt=""> Alex M., SaaS Founder</figcaption>
+        </figure>
+        <figure class="slide">
+          <blockquote>“Best dev/UX combo we’ve hired. Pages load fast and convert.”</blockquote>
+          <figcaption><img src="https://i.pravatar.cc/60?img=15" alt=""> Priya K., eCom Director</figcaption>
+        </figure>
+        <figure class="slide">
+          <blockquote>“Clear roadmap, quick iterations, measurable results. Highly recommended.”</blockquote>
+          <figcaption><img src="https://i.pravatar.cc/60?img=28" alt=""> Marco R., Marketing Lead</figcaption>
+        </figure>
+      </div>
+      <button class="slider__btn next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="cta-band">
+    <div class="container reveal">
+      <h2>Ready to turn visitors into customers?</h2>
+      <p>Book a free strategy call. We’ll map the fastest path to impact.</p>
+      <a href="#contact" class="btn btn--secondary btn--lg"><i class="fa-solid fa-headset"></i> Book My Call</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container">
+    <div class="section__head reveal">
+      <h2>Contact Us</h2>
+      <p>Tell us about your goals. We’ll reply within 24 hours.</p>
+    </div>
+    <form class="form reveal" action="#" method="post" onsubmit="return handleSubmit(event)">
+      <div class="grid grid--2">
+        <div class="form__field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+        </div>
+        <div class="form__field">
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" placeholder="jane@company.com" required />
+        </div>
+      </div>
+      <div class="grid grid--2">
+        <div class="form__field">
+          <label for="budget">Budget</label>
+          <select id="budget" name="budget" required>
+            <option value="">Select...</option>
+            <option value="1-2k">€1k–€2k</option>
+            <option value="2-5k">€2k–€5k</option>
+            <option value="5-10k">€5k–€10k</option>
+            <option value="10k+">€10k+</option>
+          </select>
+        </div>
+        <div class="form__field">
+          <label for="timeline">Timeline</label>
+          <select id="timeline" name="timeline" required>
+            <option value="">Select...</option>
+            <option value="2w">~2 weeks</option>
+            <option value="1m">~1 month</option>
+            <option value="flex">Flexible</option>
+          </select>
+        </div>
+      </div>
+      <div class="form__field">
+        <label for="message">Goals</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us what success looks like..." required></textarea>
+      </div>
+      <div class="form__actions">
+        <button class="btn btn--primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Request</button>
+        <span class="form__note"><i class="fa-solid fa-lock"></i> We’ll only use your email to reply.</span>
+      </div>
+      <p class="form__success" role="status" aria-live="polite" hidden>Thanks! We’ll get back to you soon.</p>
     </form>
-</section>
+  </section>
 
-<footer>
-    <p>© 2025 AgencyPro. All rights reserved.</p>
-</footer>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo">AgencyPro</div>
+        <p>Modern websites and growth systems for brands that want results.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#results">Results</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#contact">Book a call</a></li>
+          <li><a href="#" aria-disabled="true">hello@agencypro.dev</a></li>
+          <li><a href="#" aria-disabled="true">+00 000 000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> AgencyPro. All rights reserved.</small>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
